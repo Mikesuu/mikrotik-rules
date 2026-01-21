@@ -1,8 +1,8 @@
-name: Generate Routing Rules
+name: Generate Rules From Upstream
 on:
   schedule:
-    - cron: '0 2 * * *' # 每天凌晨2点运行
-  workflow_dispatch:   # 允许手动触发
+    - cron: '0 3 * * *'
+  workflow_dispatch:
 
 jobs:
   build:
@@ -16,21 +16,16 @@ jobs:
         with:
           python-version: '3.10'
 
-      # 此处需要安装你 main.py 中可能用到的依赖（如果有的话）
       - name: Install dependencies
         run: pip install requests
 
-      - name: Run ASN Fetcher
-        run: python main.py # 假设你的 main.py 会在 rsc_files 目录下生成原始文件
-
-      - name: Convert to Routing Rules
-        run: python convert_to_rules.py
+      - name: Run Converter
+        run: python convert.py  # 运行上面的转换脚本
 
       - name: Commit and Push
         run: |
           git config --local user.email "action@github.com"
           git config --local user.name "GitHub Action"
-          git add rsc_files/*.rsc
           git add routing_rules/*.rsc
-          git commit -m "Auto Update: ROS Routing Rules $(date +'%Y-%m-%d')" || exit 0
+          git commit -m "Update Routing Rules $(date +'%Y-%m-%d')" || exit 0
           git push
