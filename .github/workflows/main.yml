@@ -1,14 +1,14 @@
-name: Generate Rules From Upstream
+name: Update Routing Rules
 on:
   schedule:
-    - cron: '0 3 * * *'
-  workflow_dispatch:
+    - cron: '0 4 * * *'  # 每天凌晨4点自动运行
+  workflow_dispatch:      # 支持手动点击运行
 
 jobs:
   build:
     runs-on: ubuntu-latest
     steps:
-      - name: Checkout this repo
+      - name: Checkout repo
         uses: actions/checkout@v3
 
       - name: Set up Python
@@ -19,13 +19,13 @@ jobs:
       - name: Install dependencies
         run: pip install requests
 
-      - name: Run Converter
-        run: python convert.py  # 运行上面的转换脚本
+      - name: Run main script
+        run: python main.py
 
       - name: Commit and Push
         run: |
           git config --local user.email "action@github.com"
           git config --local user.name "GitHub Action"
           git add routing_rules/*.rsc
-          git commit -m "Update Routing Rules $(date +'%Y-%m-%d')" || exit 0
+          git commit -m "Auto Update: Routing Rules $(date +'%Y-%m-%d')" || exit 0
           git push
