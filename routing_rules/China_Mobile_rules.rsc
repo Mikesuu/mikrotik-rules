@@ -1,5 +1,10 @@
+# Full Rules for China_Mobile.rsc (v4/v6) - Auto Generated
+/routing rule remove [find comment="LAN-ACCEPT"];
 /routing rule remove [find table="telecom-route"];
 /delay 1s
+/routing rule add dst-address=10.10.10.0/25 action=lookup-only-in-table table=main comment="LAN-ACCEPT";
+/routing rule add dst-address=127.0.0.1/32 action=lookup-only-in-table table=main comment="LAN-ACCEPT";
+/routing rule add dst-address=fe80::/10 action=lookup-only-in-table table=main comment="LAN-ACCEPT";
 /routing rule add dst-address=36.128.0.0/10 action=lookup table="telecom-route";
 /routing rule add dst-address=36.131.3.0/24 action=lookup table="telecom-route";
 /routing rule add dst-address=36.131.4.0/24 action=lookup table="telecom-route";
