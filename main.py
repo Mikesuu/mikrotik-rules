@@ -28,14 +28,9 @@ def fetch_and_convert():
             ips = ip_pattern.findall(resp.text)
             if not ips: continue
 
+            # 只清理对应表名且非静态映射的规则
             lines = [
                 f"/routing rule remove [find table=\"{table}\" and comment!=\"STATIC-MARK-MAPPING\"];",
-                "/delay 1s",
-                ':if ([:len [/routing rule find comment="LAN-ACCEPT"]] = 0) do={',
-                '    /routing rule add dst-address=10.10.10.0/25 action=lookup-only-in-table table=main comment="LAN-ACCEPT";',
-                '    /routing rule add dst-address=127.0.0.1/32 action=lookup-only-in-table table=main comment="LAN-ACCEPT";',
-                '    /routing rule add dst-address=fe80::/10 action=lookup-only-in-table table=main comment="LAN-ACCEPT";',
-                '}',
             ]
             
             for ip in ips:
@@ -45,7 +40,7 @@ def fetch_and_convert():
             with open(f"{OUTPUT_DIR}/{output_name}", "w", encoding='utf-8') as f:
                 f.write("\r\n".join(lines))
             
-        except Exception as e:
+        except:
             pass
 
 if __name__ == "__main__":
