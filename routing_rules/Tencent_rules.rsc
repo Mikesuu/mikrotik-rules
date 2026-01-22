@@ -1,10 +1,4 @@
 /routing rule remove [find table="telecom" and comment!="STATIC-MARK-MAPPING"];
-/delay 1s
-:if ([:len [/routing rule find comment="LAN-ACCEPT"]] = 0) do={
-    /routing rule add dst-address=10.10.10.0/25 action=lookup-only-in-table table=main comment="LAN-ACCEPT";
-    /routing rule add dst-address=127.0.0.1/32 action=lookup-only-in-table table=main comment="LAN-ACCEPT";
-    /routing rule add dst-address=fe80::/10 action=lookup-only-in-table table=main comment="LAN-ACCEPT";
-}
 /routing rule add dst-address=1.12.0.0/14 action=lookup table="telecom";
 /routing rule add dst-address=1.12.0.0/18 action=lookup table="telecom";
 /routing rule add dst-address=1.12.0.0/20 action=lookup table="telecom";
