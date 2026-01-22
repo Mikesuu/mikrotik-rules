@@ -28,7 +28,6 @@ def fetch_and_convert():
             ips = ip_pattern.findall(resp.text)
             if not ips: continue
 
-            # 只清理对应表名且非静态映射的规则
             lines = [
                 f"/routing rule remove [find table=\"{table}\" and comment!=\"STATIC-MARK-MAPPING\"];",
             ]
