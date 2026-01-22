@@ -1,4 +1,4 @@
-# Full Rules for China_Unicom.rsc (v4/v6) - Auto Generated
+# Generated from China_Unicom.rsc
 /routing rule remove [find comment="LAN-ACCEPT"];
 /routing rule remove [find table="unicom-route"];
 /delay 1s
@@ -219,6 +219,7 @@
 /routing rule add dst-address=60.217.0.0/20 action=lookup table="unicom-route";
 /routing rule add dst-address=60.218.0.0/15 action=lookup table="unicom-route";
 /routing rule add dst-address=60.220.0.0/14 action=lookup table="unicom-route";
+/routing rule add dst-address=60.220.244.0/24 action=lookup table="unicom-route";
 /routing rule add dst-address=60.221.246.0/24 action=lookup table="unicom-route";
 /routing rule add dst-address=60.222.220.0/24 action=lookup table="unicom-route";
 /routing rule add dst-address=60.222.234.0/24 action=lookup table="unicom-route";

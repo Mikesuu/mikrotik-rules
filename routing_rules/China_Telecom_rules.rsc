@@ -1,4 +1,4 @@
-# Full Rules for China_Telecom.rsc (v4/v6) - Auto Generated
+# Generated from China_Telecom.rsc
 /routing rule remove [find comment="LAN-ACCEPT"];
 /routing rule remove [find table="telecom-route"];
 /delay 1s
@@ -921,6 +921,7 @@
 /routing rule add dst-address=203.86.126.0/24 action=lookup table="telecom-route";
 /routing rule add dst-address=203.86.127.0/24 action=lookup table="telecom-route";
 /routing rule add dst-address=203.89.10.0/24 action=lookup table="telecom-route";
+/routing rule add dst-address=203.89.11.0/24 action=lookup table="telecom-route";
 /routing rule add dst-address=203.89.12.0/24 action=lookup table="telecom-route";
 /routing rule add dst-address=203.89.13.0/24 action=lookup table="telecom-route";
 /routing rule add dst-address=203.99.10.0/24 action=lookup table="telecom-route";

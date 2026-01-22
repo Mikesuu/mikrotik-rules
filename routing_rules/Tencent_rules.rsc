@@ -1,4 +1,4 @@
-# Full Rules for Tencent.rsc (v4/v6) - Auto Generated
+# Generated from Tencent.rsc
 /routing rule remove [find comment="LAN-ACCEPT"];
 /routing rule remove [find table="telecom-route"];
 /delay 1s
@@ -374,6 +374,7 @@
 /routing rule add dst-address=43.164.114.0/23 action=lookup table="telecom-route";
 /routing rule add dst-address=43.164.116.0/22 action=lookup table="telecom-route";
 /routing rule add dst-address=43.164.116.0/23 action=lookup table="telecom-route";
+/routing rule add dst-address=43.164.116.0/24 action=lookup table="telecom-route";
 /routing rule add dst-address=43.164.118.0/23 action=lookup table="telecom-route";
 /routing rule add dst-address=43.164.124.0/22 action=lookup table="telecom-route";
 /routing rule add dst-address=43.164.124.0/23 action=lookup table="telecom-route";

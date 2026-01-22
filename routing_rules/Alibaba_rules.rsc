@@ -1,4 +1,4 @@
-# Full Rules for Alibaba.rsc (v4/v6) - Auto Generated
+# Generated from Alibaba.rsc
 /routing rule remove [find comment="LAN-ACCEPT"];
 /routing rule remove [find table="unicom-route"];
 /delay 1s
