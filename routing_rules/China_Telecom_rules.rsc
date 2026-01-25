@@ -10,6 +10,7 @@
 /routing rule add dst-address=1.81.93.0/24 action=lookup table="telecom";
 /routing rule add dst-address=1.82.0.0/19 action=lookup table="telecom";
 /routing rule add dst-address=1.84.128.0/19 action=lookup table="telecom";
+/routing rule add dst-address=1.85.9.0/24 action=lookup table="telecom";
 /routing rule add dst-address=1.180.0.0/14 action=lookup table="telecom";
 /routing rule add dst-address=1.192.0.0/13 action=lookup table="telecom";
 /routing rule add dst-address=1.203.112.0/23 action=lookup table="telecom";
