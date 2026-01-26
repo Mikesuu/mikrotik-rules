@@ -9060,6 +9060,7 @@
 /routing rule add dst-address=117.181.100.0/23 action=lookup table="telecom";
 /routing rule add dst-address=117.181.104.0/22 action=lookup table="telecom";
 /routing rule add dst-address=117.181.112.0/23 action=lookup table="telecom";
+/routing rule add dst-address=117.181.116.0/23 action=lookup table="telecom";
 /routing rule add dst-address=117.181.120.0/23 action=lookup table="telecom";
 /routing rule add dst-address=117.181.122.0/24 action=lookup table="telecom";
 /routing rule add dst-address=117.181.128.0/23 action=lookup table="telecom";
@@ -9078,6 +9079,7 @@
 /routing rule add dst-address=117.181.196.0/22 action=lookup table="telecom";
 /routing rule add dst-address=117.181.200.0/21 action=lookup table="telecom";
 /routing rule add dst-address=117.181.208.0/22 action=lookup table="telecom";
+/routing rule add dst-address=117.181.212.0/24 action=lookup table="telecom";
 /routing rule add dst-address=117.181.216.0/21 action=lookup table="telecom";
 /routing rule add dst-address=117.181.222.0/23 action=lookup table="telecom";
 /routing rule add dst-address=117.181.224.0/24 action=lookup table="telecom";
@@ -9150,6 +9152,7 @@
 /routing rule add dst-address=117.183.80.0/21 action=lookup table="telecom";
 /routing rule add dst-address=117.183.86.0/23 action=lookup table="telecom";
 /routing rule add dst-address=117.183.88.0/22 action=lookup table="telecom";
+/routing rule add dst-address=117.183.94.0/23 action=lookup table="telecom";
 /routing rule add dst-address=117.183.96.0/20 action=lookup table="telecom";
 /routing rule add dst-address=117.183.112.0/21 action=lookup table="telecom";
 /routing rule add dst-address=117.183.120.0/23 action=lookup table="telecom";
@@ -9159,6 +9162,8 @@
 /routing rule add dst-address=117.183.136.0/22 action=lookup table="telecom";
 /routing rule add dst-address=117.183.140.0/22 action=lookup table="telecom";
 /routing rule add dst-address=117.183.144.0/21 action=lookup table="telecom";
+/routing rule add dst-address=117.183.153.0/24 action=lookup table="telecom";
+/routing rule add dst-address=117.183.154.0/23 action=lookup table="telecom";
 /routing rule add dst-address=117.183.160.0/22 action=lookup table="telecom";
 /routing rule add dst-address=117.183.164.0/23 action=lookup table="telecom";
 /routing rule add dst-address=117.183.166.0/23 action=lookup table="telecom";
@@ -9172,6 +9177,9 @@
 /routing rule add dst-address=117.183.196.0/22 action=lookup table="telecom";
 /routing rule add dst-address=117.183.196.0/23 action=lookup table="telecom";
 /routing rule add dst-address=117.183.224.0/23 action=lookup table="telecom";
+/routing rule add dst-address=117.183.226.0/24 action=lookup table="telecom";
+/routing rule add dst-address=117.183.232.0/23 action=lookup table="telecom";
+/routing rule add dst-address=117.183.234.0/24 action=lookup table="telecom";
 /routing rule add dst-address=117.183.238.0/23 action=lookup table="telecom";
 /routing rule add dst-address=117.183.240.0/21 action=lookup table="telecom";
 /routing rule add dst-address=117.183.250.0/23 action=lookup table="telecom";
