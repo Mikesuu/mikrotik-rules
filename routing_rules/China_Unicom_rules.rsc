@@ -1785,7 +1785,13 @@
 /routing rule add dst-address=2408:8448::/32 action=lookup table="unicom";
 /routing rule add dst-address=2408:844b::/32 action=lookup table="unicom";
 /routing rule add dst-address=2408:844c::/32 action=lookup table="unicom";
+/routing rule add dst-address=2408:844c:cb09::/48 action=lookup table="unicom";
+/routing rule add dst-address=2408:844c:cb0a::/48 action=lookup table="unicom";
+/routing rule add dst-address=2408:844c:cb0b::/48 action=lookup table="unicom";
 /routing rule add dst-address=2408:844d::/32 action=lookup table="unicom";
+/routing rule add dst-address=2408:844d:cb09::/48 action=lookup table="unicom";
+/routing rule add dst-address=2408:844d:cb0a::/48 action=lookup table="unicom";
+/routing rule add dst-address=2408:844d:cb0b::/48 action=lookup table="unicom";
 /routing rule add dst-address=2408:844e::/32 action=lookup table="unicom";
 /routing rule add dst-address=2408:844f::/32 action=lookup table="unicom";
 /routing rule add dst-address=2408:844f:d408::/47 action=lookup table="unicom";
