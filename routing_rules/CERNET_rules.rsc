@@ -1129,6 +1129,7 @@
 /routing rule add dst-address=121.48.64.0/20 action=lookup table="unicom";
 /routing rule add dst-address=121.48.80.0/21 action=lookup table="unicom";
 /routing rule add dst-address=121.48.88.0/22 action=lookup table="unicom";
+/routing rule add dst-address=121.48.92.0/24 action=lookup table="unicom";
 /routing rule add dst-address=121.48.93.0/24 action=lookup table="unicom";
 /routing rule add dst-address=121.48.94.0/24 action=lookup table="unicom";
 /routing rule add dst-address=121.48.96.0/20 action=lookup table="unicom";
