@@ -613,6 +613,7 @@
 /routing rule add dst-address=101.4.16.0/20 action=lookup table="unicom";
 /routing rule add dst-address=101.4.32.0/20 action=lookup table="unicom";
 /routing rule add dst-address=101.4.48.0/21 action=lookup table="unicom";
+/routing rule add dst-address=101.4.56.0/24 action=lookup table="unicom";
 /routing rule add dst-address=101.4.63.0/24 action=lookup table="unicom";
 /routing rule add dst-address=101.4.64.0/20 action=lookup table="unicom";
 /routing rule add dst-address=101.4.128.0/24 action=lookup table="unicom";
