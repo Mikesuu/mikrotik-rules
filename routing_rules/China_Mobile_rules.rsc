@@ -6479,6 +6479,7 @@
 /routing rule add dst-address=117.141.245.0/24 action=lookup table="telecom";
 /routing rule add dst-address=117.141.246.0/24 action=lookup table="telecom";
 /routing rule add dst-address=117.141.248.0/23 action=lookup table="telecom";
+/routing rule add dst-address=117.141.249.0/24 action=lookup table="telecom";
 /routing rule add dst-address=117.141.250.0/24 action=lookup table="telecom";
 /routing rule add dst-address=117.141.252.0/24 action=lookup table="telecom";
 /routing rule add dst-address=117.141.253.0/24 action=lookup table="telecom";
