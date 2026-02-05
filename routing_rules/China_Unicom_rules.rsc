@@ -583,6 +583,7 @@
 /routing rule add dst-address=116.169.20.0/23 action=lookup table="unicom";
 /routing rule add dst-address=116.170.0.0/16 action=lookup table="unicom";
 /routing rule add dst-address=116.171.0.0/16 action=lookup table="unicom";
+/routing rule add dst-address=116.171.98.0/24 action=lookup table="unicom";
 /routing rule add dst-address=116.172.64.0/18 action=lookup table="unicom";
 /routing rule add dst-address=116.172.128.0/17 action=lookup table="unicom";
 /routing rule add dst-address=116.174.0.0/15 action=lookup table="unicom";
