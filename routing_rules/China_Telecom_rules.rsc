@@ -101,7 +101,6 @@
 /routing rule add dst-address=42.83.130.0/24 action=lookup table="telecom";
 /routing rule add dst-address=42.83.131.0/24 action=lookup table="telecom";
 /routing rule add dst-address=42.83.132.0/24 action=lookup table="telecom";
-/routing rule add dst-address=42.83.133.0/24 action=lookup table="telecom";
 /routing rule add dst-address=42.83.134.0/24 action=lookup table="telecom";
 /routing rule add dst-address=42.83.144.0/24 action=lookup table="telecom";
 /routing rule add dst-address=42.83.145.0/24 action=lookup table="telecom";
@@ -2010,6 +2009,7 @@
 /routing rule add dst-address=240e:798::/29 action=lookup table="telecom";
 /routing rule add dst-address=240e:7a0::/28 action=lookup table="telecom";
 /routing rule add dst-address=240e:7b0::/28 action=lookup table="telecom";
+/routing rule add dst-address=240e:7b6::/31 action=lookup table="telecom";
 /routing rule add dst-address=240e:804::/30 action=lookup table="telecom";
 /routing rule add dst-address=240e:814::/30 action=lookup table="telecom";
 /routing rule add dst-address=240e:81c::/30 action=lookup table="telecom";
