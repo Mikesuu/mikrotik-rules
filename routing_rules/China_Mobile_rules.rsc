@@ -4485,7 +4485,6 @@
 /routing rule add dst-address=111.49.252.0/22 action=lookup table="telecom";
 /routing rule add dst-address=111.50.0.0/16 action=lookup table="telecom";
 /routing rule add dst-address=111.50.0.0/24 action=lookup table="telecom";
-/routing rule add dst-address=111.50.4.0/24 action=lookup table="telecom";
 /routing rule add dst-address=111.50.5.0/24 action=lookup table="telecom";
 /routing rule add dst-address=111.50.6.0/24 action=lookup table="telecom";
 /routing rule add dst-address=111.50.9.0/24 action=lookup table="telecom";
