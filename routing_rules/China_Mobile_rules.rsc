@@ -12675,7 +12675,6 @@
 /routing rule add dst-address=221.178.95.0/24 action=lookup table="telecom";
 /routing rule add dst-address=221.178.96.0/24 action=lookup table="telecom";
 /routing rule add dst-address=221.178.97.0/24 action=lookup table="telecom";
-/routing rule add dst-address=221.178.98.0/24 action=lookup table="telecom";
 /routing rule add dst-address=221.178.99.0/24 action=lookup table="telecom";
 /routing rule add dst-address=221.178.100.0/24 action=lookup table="telecom";
 /routing rule add dst-address=221.178.101.0/24 action=lookup table="telecom";
