@@ -8614,7 +8614,6 @@
 /routing rule add dst-address=120.210.10.0/24 action=lookup table="telecom";
 /routing rule add dst-address=120.210.11.0/24 action=lookup table="telecom";
 /routing rule add dst-address=120.210.12.0/24 action=lookup table="telecom";
-/routing rule add dst-address=120.210.13.0/24 action=lookup table="telecom";
 /routing rule add dst-address=120.210.14.0/23 action=lookup table="telecom";
 /routing rule add dst-address=120.210.16.0/22 action=lookup table="telecom";
 /routing rule add dst-address=120.210.20.0/24 action=lookup table="telecom";
