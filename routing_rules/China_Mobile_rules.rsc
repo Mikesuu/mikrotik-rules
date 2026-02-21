@@ -10194,7 +10194,6 @@
 /routing rule add dst-address=183.222.146.0/24 action=lookup table="telecom";
 /routing rule add dst-address=183.222.149.0/24 action=lookup table="telecom";
 /routing rule add dst-address=183.222.150.0/24 action=lookup table="telecom";
-/routing rule add dst-address=183.222.160.0/21 action=lookup table="telecom";
 /routing rule add dst-address=183.222.164.0/24 action=lookup table="telecom";
 /routing rule add dst-address=183.222.172.0/22 action=lookup table="telecom";
 /routing rule add dst-address=183.222.175.0/24 action=lookup table="telecom";
